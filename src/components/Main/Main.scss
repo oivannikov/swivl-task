@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  padding: 72px 135px 0 136px;
+  color: #3E4056;
+
+  // main left
+  &__left {
+    margin-right: 48px;
+  }
+
+  &__left-header {
+    display: flex;
+  }
+
+  &__avatar {
+    margin-right: 24px;
+  }
+
+  &__info {
+    margin-right: 24px;
+  }
+
+  &__name {
+    width: 145px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  &__nick {
+    letter-spacing: -0.5px;
+  }
+
+  &__edit {
+    margin-top: 16px;
+  }
+
+  &__pencil {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: #F05D63;
+  }
+
+  &__left-section {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  &__synths,
+  &__followers,
+  &__following {
+    text-align: center;
+    margin-right: 48px;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
+  &__left-footer {
+    margin-top: 24px;
+  }
+
+  &__text {
+    width: 350px;
+    line-height: 24px;
+  }
+
+  // main right
+
+  &__switch {
+    display: flex;
+    font-weight: 600;
+  }
+
+  &__public {
+    margin-right: 30px;
+  }
+
+  &__cards {
+    margin-top: 64px;
+  }
+
+  &__card-1,
+  &__card-2 {
+    display: flex;
+  }
+
+  // перенести в другой компонент
+}
