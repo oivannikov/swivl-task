@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { CardBottom } from '../CardBottom/CardBottom';
-import { CardTop } from '../CardTop/CardTop';
+import { Card } from '../Card/Card';
 import { ToggleSwitch } from '../Features/ToggleSwitch/ToggleSwitch';
 
 import './Main.scss';
@@ -19,13 +18,13 @@ export function Main() {
             <h2 className="main__name">Benjamin Clementine</h2>
             <span className="main__nick">@benclementine</span>
             <div className="main__edit">
-              <span className="main__link main__pencil">&#9998;</span>
-              <a className="main__link" href="#">Edit Profile</a>
+              <img className="main__link main__pencil" src="images/icon_edit.svg" alt="icon edit" />
+              <div><a className="main__link" href="#">Edit Profile</a></div>
             </div>
           </div>
 
-          <div className="main__options">
-            <img src="images/options.png" alt="sign options"/>
+          <div className="main__option">
+            <img src="images/options.png" alt="icon options"/>
           </div>
         </div>  
 
@@ -61,13 +60,14 @@ export function Main() {
         </div>
 
         <div className="main__cards">
-          <div className="main__card-1">
-            <CardTop />
-            <CardTop />
+          <div className="main__cards-top">
+            <Card />
+            <Card />
           </div>
 
-          <div className="main__card-2">
-            <CardBottom />
+          <div className="main__cards-bottom">
+            <Card isAnalitika={true} headerWithAdress={true} />
+            <Card isAnalitika={true} headerWithLinkCopy={true} />
           </div>
         </div>
       </div>

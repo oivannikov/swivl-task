@@ -21,6 +21,6 @@ li {
 
   &__main {
     background: #F2F2F2;
-    height: 100vh;
+    height: calc(100vh + 72px);
   }
 }

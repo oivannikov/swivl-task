@@ -21,18 +21,18 @@ export function Header() {
         <div className="header__user">
           <span className="header__user-name">Arthur Wood</span>
           <img className="header__user-photo" src="images/user.svg" alt="user" />
-          <img className="header__user-setting" src="images/j.svg" alt="target" />
+          <img className="header__user-settings" src="images/settings.svg" alt="icon settings" />
         </div>
 
         <div className="header__icons">
-          <img className="header__notification" src="images/notification.svg" alt="notification" />
-          {/* <img src="images/q.svg" alt="q" /> */}
-          <p style={{"margin-right": "16px"}}>Photo</p>
-          <img src="images/M.svg" alt="M" />
+          <img className="header__notification" src="images/notification.svg" alt="icon notification" />
+          <img className="header__gift" src="images/icon_gift.svg" alt="icon gift" />
+          <img src="images/M.svg" alt="icon M" />
         </div>
-
-        <div className="header__add"></div>
       </div>
+  
+      <img className="header__change-photo" src="images/action_button.svg" />
     </div>
   );
 }
+

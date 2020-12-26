@@ -1,0 +1,51 @@
+.card {
+  background-color: #fff;
+  padding: 56px 24px 26px 24px;
+  border-radius: 8px;
+
+  &__changePaddingTop {
+    padding-top: 24px;
+  }
+
+  &__header-share {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__header-link {
+    margin-right: 4px;
+  }
+
+  &__header-adress {
+    padding: 0 5px;
+    background-color: rgb(226, 238, 243);
+    border-radius: 4px;
+  }
+
+  &__title {
+    width: 326px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+  }
+
+  &__footer-left {
+    display: flex;
+  }
+
+  &__photo {
+    background: #B2B3BB;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}
