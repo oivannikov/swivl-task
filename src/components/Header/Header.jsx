@@ -1,10 +1,16 @@
 import React from 'react';
 
+import { Hamburger } from '../Features/Hamburger/Hamburger';
+
 import './Header.scss';
 
 export function Header() {
   return (
     <div className="header">
+      {/* <img className="header__add" src="images/icon_add.svg" alt="icon add"/> */}
+      <Hamburger />
+      <div className="header__add">+</div>
+
       <div className="header__left">
         <h1 className="header__title">Synth</h1>
 
@@ -30,7 +36,7 @@ export function Header() {
           <img src="images/M.svg" alt="icon M" />
         </div>
       </div>
-  
+
       <img className="header__change-photo" src="images/action_button.svg" />
     </div>
   );

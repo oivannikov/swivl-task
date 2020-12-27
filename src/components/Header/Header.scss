@@ -5,6 +5,10 @@
   padding: 24px 135px 18px 130px;
   position: relative;
 
+  &__add {
+    display: none;
+  }
+
   // header left block
 
   &__left {
@@ -32,6 +36,10 @@
     margin-right: 36px;
     cursor: pointer;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &--active {
       opacity: 1;
       position: relative;      
@@ -45,7 +53,6 @@
       width: 100%;
       bottom: -100%;
       left: 0;
-      // сделать так чтобы эта штука работала универсально для всех высот 
     }
   }
 
@@ -120,7 +127,83 @@
     }
 
     &__change-photo {
+      width: 44px;
+      height: 44px;
+      top: 44px;
+    }
+  }
+
+  .hamburger__toggle:checked ~ {
+    .header__left {
+      display: block;
+    }
+
+    .header__right,
+    .header__change-photo,
+    .header__add {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__change-photo {
+      display: none;
+    }
+
+    &__add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      height: 30px;
+      width: 30px;
+      right: 48px;
+      color: black;
+      font-size: 34px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    padding: 18px 20px;
+    flex-direction: column;
+
+    &__item {
+      margin-right: 18px;
+    }
+
+    &__right {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__user {
+      margin-right: 0;
+    }
+
+    &__user-name {
+      order: 1;
+      margin-right: 0;
+    }
+  
+    &__user-photo {
+      width: 80px;
+      height: 80px;
+      order: 0;
+    }
+
+    &__user-settings {
+      order: 2;
+    }
+
+    &__icons {
+      align-items: center;
+      margin-top: 16px;
     }
   }
 }

@@ -9,9 +9,10 @@ export function Main() {
   return (
     <div className="main">
       <div className="main__left">
+
         <div className="main__left-header">
           <div className="main__avatar">
-            <img src="images/avatar.svg" alt="avatar" />
+            <img className="main__avatar-photo" src="images/avatar.svg" alt="avatar" />
           </div>
 
           <div className="main__info">
