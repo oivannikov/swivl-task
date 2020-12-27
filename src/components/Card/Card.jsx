@@ -12,7 +12,7 @@ export function Card({ isAnalitika, headerWithAdress, headerWithLinkCopy }) {
     <div className={classNames('card', {'card__changePaddingTop': headerWithAdress || headerWithLinkCopy})}>
       { headerWithAdress && (
           <div className="card__header-share">
-            <p>Shared to&thinsp;</p>
+            <p>Shared&nbsp;to&thinsp;</p>
             <span className="card__header-adress">#discussionaboutanimgttdds...</span>
           </div>
       )}
