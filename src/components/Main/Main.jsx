@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Card } from '../Card/Card';
+import { DragEndDrop } from '../DragEndDrop/DragEndDrop';
 import { ToggleSwitch } from '../Features/ToggleSwitch/ToggleSwitch';
 
 import './Main.scss';
 
 export function Main() {
+  const [isOpenOptions, setOpenOptions] = useState(false);
+
   return (
     <div className="main">
       <div className="main__left">
@@ -24,7 +27,7 @@ export function Main() {
             </div>
           </div>
 
-          <div className="main__option">
+          <div className="main__option" onClick={() => setOpenOptions(!isOpenOptions)}>
             <img src="images/options.png" alt="icon options"/>
           </div>
         </div>  
@@ -51,6 +54,8 @@ export function Main() {
             Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to      CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
           </p>
         </div>
+
+        { isOpenOptions && <DragEndDrop /> }
       </div>
 
       <div className="main__right">

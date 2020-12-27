@@ -7,6 +7,11 @@
   height: 100%;
 
   // main left
+
+  &__left {
+    position: relative;
+  }
+
   &__left-header {
     display: flex;
   }
@@ -131,7 +136,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 6px;
       align-items: center;
-      margin-right: 0;
     }
 
     &__text,
@@ -164,8 +168,9 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 470px) {
   .main {
+
     &__avatar {
       width: 120px;
       height: 120px;
@@ -186,9 +191,21 @@
     &__following {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .main {
+    &__avatar-photo {
+      height: 80px;
+      width: 80px;
+    }
+
+    &__left-header,
+    &__left-section,
+    &__text {
+      width: 300px;
     }
   }
 }

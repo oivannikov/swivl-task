@@ -7,7 +7,6 @@ import './Header.scss';
 export function Header() {
   return (
     <div className="header">
-      {/* <img className="header__add" src="images/icon_add.svg" alt="icon add"/> */}
       <Hamburger />
       <div className="header__add">+</div>
 
@@ -41,4 +40,3 @@ export function Header() {
     </div>
   );
 }
-

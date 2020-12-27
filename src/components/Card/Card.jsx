@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import { Analitika } from './Analitika/Analitika';
 import { Share } from './Share/Share';
@@ -13,7 +14,7 @@ export function Card({ isAnalitika, headerWithAdress, headerWithLinkCopy }) {
       { headerWithAdress && (
           <div className="card__header-share">
             <p>Shared&nbsp;to&thinsp;</p>
-            <span className="card__header-adress">#discussionaboutanimgttdds...</span>
+            <span className="card__header-adress">#discussionaboutanimgttddsewqwe</span>
           </div>
       )}
 
@@ -36,4 +37,10 @@ export function Card({ isAnalitika, headerWithAdress, headerWithLinkCopy }) {
       </div>
     </div>
   );
+}
+
+Card.propTypes = {
+  isAnalitika: PropTypes.bool.isRequired,
+  headerWithAdress: PropTypes.bool.isRequired,
+  headerWithLinkCopy: PropTypes.bool.isRequired,
 }

@@ -18,9 +18,13 @@
   }
 
   &__header-adress {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     padding: 0 5px;
     background-color: rgb(226, 238, 243);
     border-radius: 4px;
+    width: 238px;
   }
 
   &__title {
@@ -63,8 +67,9 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 470px) {
   .card {
-    padding: 34px 14px;
+    padding: 24px 12px;
+    width: 260px;
   }
 }
