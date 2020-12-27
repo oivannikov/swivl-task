@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/swivl-task/static/css/main.e7e2a73c.chunk.css",
+    "main.css": "/swivl-task/static/css/main.00184d28.chunk.css",
     "main.js": "/swivl-task/static/js/main.454da355.chunk.js",
     "main.js.map": "/swivl-task/static/js/main.454da355.chunk.js.map",
     "runtime-main.js": "/swivl-task/static/js/runtime-main.e248173e.js",
@@ -10,13 +10,13 @@
     "static/js/3.58edebeb.chunk.js": "/swivl-task/static/js/3.58edebeb.chunk.js",
     "static/js/3.58edebeb.chunk.js.map": "/swivl-task/static/js/3.58edebeb.chunk.js.map",
     "index.html": "/swivl-task/index.html",
-    "static/css/main.e7e2a73c.chunk.css.map": "/swivl-task/static/css/main.e7e2a73c.chunk.css.map",
+    "static/css/main.00184d28.chunk.css.map": "/swivl-task/static/css/main.00184d28.chunk.css.map",
     "static/js/2.6bdbb5fa.chunk.js.LICENSE.txt": "/swivl-task/static/js/2.6bdbb5fa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e248173e.js",
     "static/js/2.6bdbb5fa.chunk.js",
-    "static/css/main.e7e2a73c.chunk.css",
+    "static/css/main.00184d28.chunk.css",
     "static/js/main.454da355.chunk.js"
   ]
 }
