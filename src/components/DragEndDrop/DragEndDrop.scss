@@ -1,0 +1,45 @@
+.dragenddrop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 176px;
+  height: 124px;
+  color: #3E4056;
+  border-radius: 8px;
+  font-weight: 600;
+  position: absolute;
+  top: 44px;
+  right: -164px;
+  opacity: 0.94;
+
+  &__edit-user,
+  &__block-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+
+    &:hover {
+      background: #ECF1F8;
+    }
+  }
+
+  &__edit-icon,
+  &__block-icon {
+    margin-right: 18px;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 132px;
+  }
+}
+
+@media (max-width: 840px) {
+  .dragenddrop {
+    right: 0;
+  }
+}

@@ -1,0 +1,209 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+  padding: 24px 135px 18px 130px;
+  position: relative;
+
+  &__add {
+    display: none;
+  }
+
+  // header left block
+
+  &__left {
+    color: #3E4056;
+  }
+
+  &__title {
+    font-size: 22px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-right: 36px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      opacity: 1;
+      position: relative;      
+    }
+
+    &--active::after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+      height: 4px;
+      width: 100%;
+      bottom: -100%;
+      left: 0;
+    }
+  }
+
+  // header right block
+
+  &__right {
+    display: flex;
+    align-items: center;
+    height: 0;
+    margin-top: 22px;
+  }
+
+  &__user {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+  }
+
+  &__user-name {
+    margin-right: 20px;
+    font-family: Open Sans;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: #3E3F58;
+  }
+
+  &__user-photo {
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+  }
+
+  &__user-settings {
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.6;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__notification,
+  &__gift {
+    margin-right: 16px;
+  }
+
+  &__change-photo {
+    cursor: pointer;
+    position: absolute;
+    top: 90px;
+    right: 130px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  }
+}
+
+@media (max-width: 1040px) {
+  .header {
+    padding: 18px 40px;
+    flex-direction: column;
+    
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      height: 100%;
+      margin-top: 0;
+    }
+
+    &__change-photo {
+      width: 44px;
+      height: 44px;
+      top: 44px;
+    }
+  }
+
+  .hamburger__toggle:checked ~ {
+    .header__left {
+      display: block;
+    }
+
+    .header__right,
+    .header__change-photo,
+    .header__add {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    &__change-photo {
+      display: none;
+    }
+
+    &__add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      height: 30px;
+      width: 30px;
+      right: 48px;
+      color: black;
+      font-size: 34px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    padding: 18px 20px;
+    flex-direction: column;
+
+    &__item {
+      margin-right: 18px;
+    }
+
+    &__right {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__user {
+      margin-right: 0;
+    }
+
+    &__user-name {
+      order: 1;
+      margin-right: 0;
+    }
+  
+    &__user-photo {
+      width: 60px;
+      height: 60px;
+      order: 0;
+    }
+
+    &__user-settings {
+      order: 2;
+    }
+
+    &__icons {
+      align-items: center;
+      margin-top: 16px;
+    }
+  }
+}

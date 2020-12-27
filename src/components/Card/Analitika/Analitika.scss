@@ -1,0 +1,19 @@
+.rightFooter {
+  display: flex;
+  align-items: center;
+
+  &__play,
+  &__like {
+    display: flex;
+    align-items: center;
+  }
+
+  &__play {
+    margin-right: 16px;
+  }
+
+  &__play-photo,
+  &__like-photo {
+    margin-right: 8px;
+  }
+}
