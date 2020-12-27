@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/swivl-task/static/css/main.5727a4c0.chunk.css",
+    "main.js": "/swivl-task/static/js/main.51d7988b.chunk.js",
+    "main.js.map": "/swivl-task/static/js/main.51d7988b.chunk.js.map",
+    "runtime-main.js": "/swivl-task/static/js/runtime-main.858079a4.js",
+    "runtime-main.js.map": "/swivl-task/static/js/runtime-main.858079a4.js.map",
+    "static/js/2.99686849.chunk.js": "/swivl-task/static/js/2.99686849.chunk.js",
+    "static/js/2.99686849.chunk.js.map": "/swivl-task/static/js/2.99686849.chunk.js.map",
+    "static/js/3.cf350ca3.chunk.js": "/swivl-task/static/js/3.cf350ca3.chunk.js",
+    "static/js/3.cf350ca3.chunk.js.map": "/swivl-task/static/js/3.cf350ca3.chunk.js.map",
+    "index.html": "/swivl-task/index.html",
+    "static/css/main.5727a4c0.chunk.css.map": "/swivl-task/static/css/main.5727a4c0.chunk.css.map",
+    "static/js/2.99686849.chunk.js.LICENSE.txt": "/swivl-task/static/js/2.99686849.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.858079a4.js",
+    "static/js/2.99686849.chunk.js",
+    "static/css/main.5727a4c0.chunk.css",
+    "static/js/main.51d7988b.chunk.js"
+  ]
+}
